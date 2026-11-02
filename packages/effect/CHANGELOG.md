@@ -1,5 +1,13 @@
 # effect
 
+## 4.1.3
+
+### Patch Changes
+
+- [#10294](https://github.com/Effect-TS/effect/pull/10294) [`7e8f3fb`](https://github.com/Effect-TS/effect/commit/7e8f3fbddf67c4fa7e28eead05143080ea653b58) Thanks @effect-bot! - Fix `HttpMiddleware.cors` calling the `allowedOrigins` predicate with `undefined` for requests without an `Origin` header.
+
+- [#10288](https://github.com/Effect-TS/effect/pull/10288) [`6e57c49`](https://github.com/Effect-TS/effect/commit/6e57c49402fa13b8dc4f9c16be91dedf510321a3) Thanks @fubhy! - Fix `SchemaBinary` encoding non-number elements of a number array as `NaN` or `0` instead of failing with "Expected a number" when an earlier element needs 64-bit float encoding, such as `"x"` in `[Math.PI, "x"]`.
+
 ## 4.1.2
 
 ### Patch Changes
